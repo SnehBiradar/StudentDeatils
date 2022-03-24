@@ -1,0 +1,8 @@
+package com.student.service;
+
+import com.student.entity.Student;
+
+public interface StdentService {
+	public Student getStudent(Long Id);
+
+}

@@ -1,0 +1,18 @@
+package com.mark.service;
+
+import java.util.List;
+
+import com.mark.entity.Marks;
+import com.student.entity.Student;
+
+public class MarkServiceImpl implements Markservice {
+	List<Marks> list=List.of(
+		new Marks(50L,60L,70L,1L),	
+		new Marks(80L,60L,70L,2L),	
+		new Marks(90L,60L,70L,3L),	
+			);
+	@Override
+	public Marks getMarks(Long Id) {
+		return list.stream().filter(Marks->.getStudent_ID().equals(Id)).findAny().orElse(null);
+	}
+}

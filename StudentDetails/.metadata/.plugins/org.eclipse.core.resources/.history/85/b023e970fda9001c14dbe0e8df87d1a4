@@ -1,0 +1,8 @@
+package com.student.service;
+
+import com.student.entity.Student;
+
+public class StudentService {
+	public Student getStudent(Long id);
+
+}

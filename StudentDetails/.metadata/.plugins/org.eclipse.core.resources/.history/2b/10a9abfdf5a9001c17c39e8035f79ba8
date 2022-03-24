@@ -1,0 +1,63 @@
+package com.student.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+	private Long Student_ID;
+	private String Name;
+	private String Student_Class;
+
+	List<Marks> contacts= new ArrayList<>();
+
+	public Student() {
+		super();
+	}
+
+	public Long getStudent_ID() {
+		return Student_ID;
+	}
+
+	public void setStudent_ID(Long student_ID) {
+		Student_ID = student_ID;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public String getClass() {
+		return Student_Class;
+	}
+
+	public void setClass(String class1) {
+		Student_Class = class1;
+	}
+
+	public List<Marks> getContacts() {
+		return contacts;
+	}
+
+	public void setContacts(List<Marks> contacts) {
+		this.contacts = contacts;
+	}
+
+	public Student(Long student_ID, String name, String class1) {
+		super();
+		Student_ID = student_ID;
+		Name = name;
+		Student_Class = class1;
+	}
+
+	public Student(Long student_ID, String name, String class1, List<Marks> contacts) {
+		super();
+		Student_ID = student_ID;
+		Name = name;
+		Student_Class = class1;
+		this.contacts = contacts;
+	}
+}

@@ -1,0 +1,11 @@
+package com.student.entity;
+
+public class Marks {
+	private Long english;
+	private Long science;
+	private Long social_studies; 
+	
+	
+	
+
+}
